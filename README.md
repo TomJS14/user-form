@@ -1,6 +1,6 @@
 # user-form
 
-Create a form that collects:
+A form module that collects:
 
 - Name
 - Email
@@ -9,6 +9,4 @@ Create a form that collects:
 - Password
 - Password confirmation
 
-Set up inline validation to monitor correct inputs as they're typed
-
-Set up validation on submit button to prevent submission of input is invalid
+Inline validation to monitor correct inputs as they're typed - Submit button disabled until all inputs valid
