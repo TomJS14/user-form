@@ -19,13 +19,14 @@
             name="username"
             minlength="5"
             maxlength="10"
+            required
           />
-          <span class="username-error" aria-live="polite"></span>
+          <span class="username error" aria-live="polite"></span>
         </p>
         <p>
           <label for="email" class="input">Enter your email: </label>
-          <input type="email" id="email" name="email" />
-          <span class="email-error" aria-live="polite"></span>
+          <input type="email" id="email" name="email" required />
+          <span class="email error" aria-live="polite"></span>
         </p>
         <p>
           <label for="country" class="input">Country: </label>
@@ -44,8 +45,9 @@
             id="postcode"
             name="postcode"
             pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
+            required
           />
-          <span class="postcode-error" aria-live="polite"></span>
+          <span class="postcode error" aria-live="polite"></span>
         </p>
         <p>
           <label for="password" class="input">Password: </label>
@@ -54,8 +56,11 @@
             id="password"
             name="password"
             placeholder="Create Password"
+            minlength="5"
+            maxlength="10"
+            required
           />
-          <span class="password-error" aria-live="polite"></span>
+          <span class="password error" aria-live="polite"></span>
         </p>
         <p>
           <label for="confirmPassword" class="input">Confirm Password: </label>
@@ -64,8 +69,11 @@
             id="confirmPassword"
             name="confirmPassword"
             placeholder="Confirm Password"
+            minlength="5"
+            maxlength="10"
+            required
           />
-          <span class="confirm-error" aria-live="polite"></span>
+          <span class="confirm error" aria-live="polite"></span>
         </p>
 
         <button class="submit">Sign up!</button>
